@@ -1,0 +1,18 @@
+HOW TO SET UP AN OPENGL PROJECT WITH GLEW AND FREEGLUT IN VISUAL STUDIO
+
+VISUAL STUDIO
+1. GO to FILE -> NEW -> PROJECT. Make sure VISUAL C++ is selected, 
+   then select EMPTY PROJECT
+2. Give your project a name, for example HELLO_WORD, and click OK.
+3. In the newly created project's hierarchy right click on the 
+   SOURCE FILES -> ADD -> NEW FILE
+4. Select C++ FILE, and give your source file a name, for example, MAIN.CPP
+5. Right click on the PROJECT, select PROPERTIES
+6. In CONFIGURATION drop down list select ALL CONFIGURATIONS
+7. Under C/C++ -> GENERAL in ADDITIONAL INPUT DIRECTORIES add paths to where glew and   
+   freeglut are located (add paths to include directories of both glew and freeglut ), click OK.
+8. To tell visual studio what lib files to use and where they are, select LINKER -> INPUT
+9. Add 2 ADDITIONAL DEPENDENCIES:  glew32.lib and freeglut.lib (what lib files to include)
+10. Now you have to tell VS what where those lib files are located. Select LINKER ->
+    GENERAL  to include paths to lib folders for both glew and freeglut under ADDITIONAL LIBRARY DIRECTORIES
+ 11. 
